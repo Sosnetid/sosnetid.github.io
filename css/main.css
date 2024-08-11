@@ -861,9 +861,3 @@ footer p a {
 footer p a:hover {
     color: #fff;
 } 
-.about-slider .about-item img {
-    width: 100%;
-    height: auto;
-    display: block;
-}
-
