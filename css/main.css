@@ -419,14 +419,16 @@ a:active {
 
 .navbar-default .navbar-brand img {
     margin-right: 10px; /* Memberikan jarak antara logo dan teks */
+    width: 50px; /* Pastikan ukuran logo sudah sesuai */
+    height: auto;
+    vertical-align: middle;
 }
 
 .navbar-default .navbar-brand span {
     color: #fff; /* Warna teks "Social Network Indonesia" */
     font-size: 20px; /* Ukuran font untuk teks */
-    font-weight: bold; /* Ketebalan font */
-}
-
+    vertical-align: middle;
+    display: inline-block;
 }
 .navbar-default .navbar-nav > li > a,
 .navbar-default .navbar-nav > li > a:hover {
