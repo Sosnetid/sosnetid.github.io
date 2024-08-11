@@ -734,7 +734,7 @@ a:active {
 #call-to-action .block p {
     font-size: 15px;
     padding-right: 30px;
-    color: #9F9F9F;
+    color: #000000; /* Ubah warna teks paragraf menjadi hitam */
 }
 #call-to-action .block input {
     width: 40%;
@@ -839,4 +839,5 @@ footer p a {
 }
 footer p a:hover {
     color: #fff;
-}
+} 
+
