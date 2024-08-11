@@ -856,10 +856,3 @@ footer p a {
 footer p a:hover {
     color: #fff;
 } 
-/* Tambahan CSS untuk Owl Carousel */
-.owl-carousel .item img {
-    width: 100%;
-    height: auto;
-    display: block;
-}
-
