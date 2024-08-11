@@ -411,8 +411,21 @@ a:active {
     transition: all 0.3s ease-in-out 0s;
 }
 .navbar-default .navbar-brand {
+    display: flex;
+    align-items: center;
     color: #777;
     padding: 5px 0;
+}
+
+.navbar-default .navbar-brand img {
+    margin-right: 10px; /* Memberikan jarak antara logo dan teks */
+    width: 50px;
+    height: auto;
+}
+
+.navbar-default .navbar-brand span {
+    font-size: 20px;
+    color: #fff;
 }
 .navbar-default .navbar-nav > li > a,
 .navbar-default .navbar-nav > li > a:hover {
