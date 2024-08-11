@@ -2,7 +2,21 @@ $(window).load(function() {
     $("#preloader").fadeOut("slow");
 });
 
-$(document).ready(function(){
+$(document).ready(function() {
+    // Existing code in main.js
+    // For example, initializing other components or handling events
+
+    // Owl Carousel Initialization
+    $(".owl-carousel").owlCarousel({
+        items: 1,
+        loop: true,
+        margin: 10,
+        autoplay: true,
+        autoplayTimeout: 3000,
+        autoplayHoverPause: true
+    });
+});
+
 
     wow = new WOW({
         mobile:       false,       // default
