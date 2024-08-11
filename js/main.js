@@ -15,8 +15,6 @@ $(document).ready(function() {
         autoplayTimeout: 3000,
         autoplayHoverPause: true
     });
-});
-
 
     wow = new WOW({
         mobile:       false,       // default
