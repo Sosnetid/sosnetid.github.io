@@ -2,18 +2,18 @@ $(window).load(function() {
     $("#preloader").fadeOut("slow");
 });
 
-$(document).ready(function() {
-    // Existing code in main.js
-    // For example, initializing other components or handling events
-
-    // Owl Carousel Initialization
+$(document).ready(function(){
     $(".owl-carousel").owlCarousel({
-        items: 1,
-        loop: true,
-        margin: 10,
-        autoplay: true,
-        autoplayTimeout: 3000,
-        autoplayHoverPause: true
+        loop:true,
+        margin:10,
+        nav:true,
+        items:1,
+        autoplay:true,
+        autoplayTimeout:3000,
+        autoplayHoverPause:true,
+        animateOut: 'fadeOut'
+    });
+});
     });
 
     wow = new WOW({
