@@ -411,25 +411,25 @@ a:active {
     transition: all 0.3s ease-in-out 0s;
 }
 .navbar-default .navbar-brand {
-    display: flex; /* Menggunakan flexbox untuk mengatur tata letak logo dan teks secara horizontal */
-    align-items: center; /* Menyelaraskan logo dan teks di tengah secara vertikal */
+    display: flex;
+    align-items: center;
     color: #777;
     padding: 5px 0;
+    margin-top: 20px; /* Sesuaikan margin untuk posisi logo */
 }
 
 .navbar-default .navbar-brand img {
     margin-right: 10px; /* Memberikan jarak antara logo dan teks */
-    width: 50px; /* Pastikan ukuran logo sudah sesuai */
+    width: 50px; /* Ukuran logo */
     height: auto;
+    vertical-align: middle;
 }
 
-.navbar-default .navbar-brand span {
-    color: #fff; /* Warna teks "Social Network Indonesia" */
-    font-size: 20px; /* Ukuran font untuk teks */
-    display: inline-block; /* Menjaga teks tetap berada di samping logo */
+.navbar-default .navbar-brand .brand-text {
+    font-size: 20px;
+    color: #000000; /* Warna hitam untuk teks */
 }
 
-}
 .navbar-default .navbar-nav > li > a,
 .navbar-default .navbar-nav > li > a:hover {
     color: #fff;
