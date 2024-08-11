@@ -169,6 +169,7 @@ a {
     font-size: 40px;
     letter-spacing: 6px;
     position: relative;
+    color: #fff;
 }
 
 /*-- Navbar --*/
@@ -329,3 +330,4 @@ footer {
 footer p a:hover {
     color: #fff;
 }
+
