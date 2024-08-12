@@ -147,7 +147,6 @@ a:active {
     text-shadow: none;
 }
 
-
 /* Sweep To Right */
 .hover-right {
     display: inline-block;
@@ -195,7 +194,6 @@ a:active {
     -webkit-transform: scaleX(1);
     transform: scaleX(1);
 }
-
 
 /*Preloader*/
 
@@ -325,8 +323,6 @@ a:active {
         background: #41aba0;
     }
 }
-
-
 
 /*--
     #hero-area start
@@ -904,4 +900,3 @@ img {
 .prev:hover, .next:hover {
   background-color: rgba(0, 0, 0, 0.8);
 }
-
