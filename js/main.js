@@ -125,6 +125,26 @@ function init() {
         // This is where you would paste any style found on Snazzy Maps.
         styles: [{"featureType":"landscape.natural","elementType":"geometry.fill","stylers":[{"visibility":"on"},{"color":"#e0efef"}]},{"featureType":"poi","elementType":"geometry.fill","stylers":[{"visibility":"on"},{"hue":"#1900ff"},{"color":"#c0e8e8"}]},{"featureType":"road","elementType":"geometry","stylers":[{"lightness":100},{"visibility":"simplified"}]},{"featureType":"road","elementType":"labels","stylers":[{"visibility":"off"}]},{"featureType":"transit.line","elementType":"geometry","stylers":[{"visibility":"on"},{"lightness":700}]},{"featureType":"water","elementType":"all","stylers":[{"color":"#7dcdcd"}]}]
     };
+let currentSlide = 0;
+
+function showSlide(index) {
+  const slides = document.querySelectorAll('.slide');
+  if (index >= slides.length) currentSlide = 0;
+  if (index < 0) currentSlide = slides.length - 1;
+
+  slides.forEach((slide, i) => {
+    slide.style.display = i === currentSlide ? 'block' : 'none';
+  });
+}
+
+function moveSlide(step) {
+  currentSlide += step;
+  showSlide(currentSlide);
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+  showSlide(currentSlide);
+});
 
     // Get the HTML DOM element that will contain your map 
     // We are using a div with id="map" seen below in the <body>
