@@ -144,6 +144,10 @@ function moveSlide(step) {
 
 document.addEventListener('DOMContentLoaded', () => {
   showSlide(currentSlide);
+    setInterval(() => {
+  moveSlide(1);
+}, 3000); // Slide akan bergerak setiap 3 detik
+
 });
 
     // Get the HTML DOM element that will contain your map 
