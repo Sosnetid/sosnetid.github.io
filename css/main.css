@@ -430,7 +430,7 @@ a:active {
     font-size: 20px; /* Ukuran font untuk teks */
     vertical-align: middle;
     display: inline-block;
-    background: linear-gradient(135deg, #ff69b4, #000000); /* Warna hitam */
+    background:(#000000); /* Warna hitam */
     -webkit-background-clip: text;
     color: transparent;
 }
