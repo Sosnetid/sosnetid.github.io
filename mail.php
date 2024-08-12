@@ -1,17 +1,18 @@
 <?php
-    $to = "flamixs.info@gmail.com";
-    $from = $_REQUEST['name'];
-    $headers = "Content-type: text/html;From: $from";
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    $name = $_POST['name'];
+    $email = $_POST['email'];
+    $message = $_POST['message'];
 
-    $fields = array();
-    $fields["name"] = $_REQUEST['name'];
-    $fields["email"] = $_REQUEST['email'];
-    $fields["message"] = $_REQUEST['message'];
+    $to = "flamixs.info@gmail.com";  // Ganti dengan email Anda
+    $subject = "Pesan dari $name";
+    $body = "Nama: $name\nEmail: $email\n\nPesan:\n$message";
+    $headers = "From: $email";
 
-    $body = "Here is what was sent:\n\n";
-    $body .= 'Name : '.$fields['name']. '<br>';
-    $body .= 'Email : '.$fields['email']. '<br>';
-    $body .= 'Message : '.$fields['message']. '<br>';
-
-    $send = mail($to, $body, $headers);
-
+    if (mail($to, $subject, $body, $headers)) {
+        echo "Pesan berhasil dikirim!";
+    } else {
+        echo "Pesan gagal dikirim.";
+    }
+}
+?>
