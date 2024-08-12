@@ -147,6 +147,19 @@ document.addEventListener('DOMContentLoaded', () => {
     setInterval(() => {
   moveSlide(1);
 }, 3000); // Slide akan bergerak setiap 3 detik
+    $(document).ready(function(){
+  $("#about-carousel").owlCarousel({
+      items: 1,
+      loop: true,
+      autoplay: true,
+      autoplayTimeout: 3000,
+      autoplayHoverPause: true,
+      nav: true,
+      dots: true,
+      navText: ["&#10094;","&#10095;"]
+  });
+});
+
 
 });
 
